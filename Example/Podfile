@@ -1,0 +1,12 @@
+use_frameworks!
+platform :ios, '10.0'
+
+target 'NMMultiUnitRuler_Example' do
+  pod 'NMMultiUnitRuler', :path => '../'
+
+  target 'NMMultiUnitRuler_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
