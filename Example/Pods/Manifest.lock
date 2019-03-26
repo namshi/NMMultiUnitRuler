@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  NMMultiUnitRuler: fbebef840e54ede2f34a8a34ca782eb6c00410ca
+  NMMultiUnitRuler: 320e93aebabee6a602acbf86249e07cf1755f558
 
 PODFILE CHECKSUM: ec8b2d5d306125f0bd5cddadd2929b53a6c6294d
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.1
