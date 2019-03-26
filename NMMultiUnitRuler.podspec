@@ -29,7 +29,7 @@ A simple customizable ruler control that support multiple units. The control sup
                        DESC
 
   s.homepage         = 'https://github.com/namshi/NMMultiUnitRuler'
-  s.screenshots     = 'https://s3.amazonaws.com/farshid.ghods.github/ruler-color-1.jpg'
+  s.screenshots     = 'https://raw.githubusercontent.com/namshi/NMMultiUnitRuler/master/Screenshots/NMMultiUnitRuler.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'NAMSHI MOBILE TEAM' => 'mobile-dev@namshi.com' }
   s.source           = { :git => 'https://github.com/namshi/NMMultiUnitRuler.git', :tag => s.version.to_s }
@@ -38,10 +38,5 @@ A simple customizable ruler control that support multiple units. The control sup
 
   s.source_files = 'NMMultiUnitRuler/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'NMMultiUnitRuler' => ['NMMultiUnitRuler/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
 end

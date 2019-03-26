@@ -46,14 +46,14 @@
 		04FDA5609589367F1114BC5417CA2105 /* Pods-NMMultiUnitRuler_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NMMultiUnitRuler_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		0556A9D762B35EB5236D49A1705D9FE1 /* Pods-NMMultiUnitRuler_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NMMultiUnitRuler_Tests-resources.sh"; sourceTree = "<group>"; };
 		1094225477696346D496A9A40B277D4D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2F28A3D0341FBF686DDA08AAF8BFE6E1 /* Pods-NMMultiUnitRuler_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NMMultiUnitRuler_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		3F2A673A0F7B40B1E72E3A849236532D /* Constant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = NMMultiUnitRuler/Classes/Constant.swift; sourceTree = "<group>"; };
 		40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		41C3CD0E01CC851FE5FDE008657AF2BF /* NMRangeTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NMRangeTextView.swift; path = NMMultiUnitRuler/Classes/NMRangeTextView.swift; sourceTree = "<group>"; };
 		434E31FA11EFEDAF8CDB2489AFAEB976 /* NMMultiUnitRuler-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NMMultiUnitRuler-umbrella.h"; sourceTree = "<group>"; };
 		4B4C8721DC9D274A0BBF672918EFD77F /* Pods-NMMultiUnitRuler_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NMMultiUnitRuler_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		5A1C4F43C776A3C45574914B48D6CE72 /* Pods_NMMultiUnitRuler_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NMMultiUnitRuler_Tests.framework; path = "Pods-NMMultiUnitRuler_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A1C4F43C776A3C45574914B48D6CE72 /* Pods_NMMultiUnitRuler_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NMMultiUnitRuler_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF1628FCAAC3319E6E2999D34D9A74A /* NMMultiUnitRuler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NMMultiUnitRuler.swift; path = NMMultiUnitRuler/Classes/NMMultiUnitRuler.swift; sourceTree = "<group>"; };
 		5D260295890B90355D7A94BB630ACD36 /* NMMultiUnitRuler-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NMMultiUnitRuler-prefix.pch"; sourceTree = "<group>"; };
 		64B11B2AF5DEEB9702B9825DD9D8959E /* Pods-NMMultiUnitRuler_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NMMultiUnitRuler_Tests-frameworks.sh"; sourceTree = "<group>"; };
@@ -62,12 +62,12 @@
 		7E9CAE32A63712758600CEA4E4D93262 /* Pods-NMMultiUnitRuler_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NMMultiUnitRuler_Example-frameworks.sh"; sourceTree = "<group>"; };
 		7FADF057DF5C4D77F701C123680DB130 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		820ADEE89E38F3218D0D47084E3BFC84 /* Pods-NMMultiUnitRuler_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NMMultiUnitRuler_Example-umbrella.h"; sourceTree = "<group>"; };
-		87C8DB3CD4F0241FDBBC004E00CADD4C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		87C8DB3CD4F0241FDBBC004E00CADD4C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		890BDBBE60762B6349905D7EC63D5E9A /* Pods-NMMultiUnitRuler_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NMMultiUnitRuler_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		8A9DF43C5B0B12A1C129D9BA16C0924D /* NMRangeScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NMRangeScrollView.swift; path = NMMultiUnitRuler/Classes/NMRangeScrollView.swift; sourceTree = "<group>"; };
-		9266AEFAD06D0B2F2119060D67B26CDC /* Pods_NMMultiUnitRuler_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NMMultiUnitRuler_Example.framework; path = "Pods-NMMultiUnitRuler_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9266AEFAD06D0B2F2119060D67B26CDC /* Pods_NMMultiUnitRuler_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NMMultiUnitRuler_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E3EE053DB4CEFB7DDBC05342D321DAE /* NMMultiUnitRuler-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NMMultiUnitRuler-dummy.m"; sourceTree = "<group>"; };
-		A0DEF3C7749F20ED85E7F4B90208D0DA /* NMMultiUnitRuler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NMMultiUnitRuler.framework; path = NMMultiUnitRuler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0DEF3C7749F20ED85E7F4B90208D0DA /* NMMultiUnitRuler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NMMultiUnitRuler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A303023E7CA45C29716A600CABFA3547 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B083D3DEAEC2B258EE99BDFE8E44F992 /* Pods-NMMultiUnitRuler_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NMMultiUnitRuler_Example-dummy.m"; sourceTree = "<group>"; };
 		BDD0420CA2665D65B77244CF82DE81D5 /* NMRangeLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NMRangeLayer.swift; path = NMMultiUnitRuler/Classes/NMRangeLayer.swift; sourceTree = "<group>"; };
@@ -78,9 +78,9 @@
 		D775369C12B1DDF3D3EFDCFF65E9677D /* NMMultiUnitRuler.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NMMultiUnitRuler.modulemap; sourceTree = "<group>"; };
 		DA378390B03EE755230E0079E09D5871 /* Pods-NMMultiUnitRuler_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NMMultiUnitRuler_Tests.modulemap"; sourceTree = "<group>"; };
 		DB48A76CB59E12D171B4DA963A400260 /* Pods-NMMultiUnitRuler_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NMMultiUnitRuler_Tests-umbrella.h"; sourceTree = "<group>"; };
-		E264C4BFCB3F04A3D4006470F55EDF46 /* NMMultiUnitRuler.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = NMMultiUnitRuler.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E264C4BFCB3F04A3D4006470F55EDF46 /* NMMultiUnitRuler.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = NMMultiUnitRuler.podspec; sourceTree = "<group>"; };
 		E43D7C977F46BAAE18ACC2E6DA0D6A1E /* Pods-NMMultiUnitRuler_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NMMultiUnitRuler_Example-resources.sh"; sourceTree = "<group>"; };
-		E73A499AEF5BA0600B283CF151D35983 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		E73A499AEF5BA0600B283CF151D35983 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		E9107FB83D59FA1105384BFAB0D6912E /* NMRangePointerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NMRangePointerView.swift; path = NMMultiUnitRuler/Classes/NMRangePointerView.swift; sourceTree = "<group>"; };
 		ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		FFDB29610BE114878BBDFCACD028E834 /* NMMultiUnitRuler.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NMMultiUnitRuler.xcconfig; sourceTree = "<group>"; };
@@ -346,6 +346,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
@@ -689,8 +690,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};

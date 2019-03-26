@@ -94,7 +94,7 @@ public class NMMultiUnitRuler: UIView {
     }
     public var delegate: NMMultiUnitRulerDelegate?
     public var measurement: NSMeasurement?
-    private var segmentControl: UISegmentedControl = UISegmentedControl()
+    public var segmentControl: UISegmentedControl = UISegmentedControl()
     private var segmentedViews: Array<UIView>?
     private var pointerViews: Array<NMRangePointerView>?
     private var scrollViews: Array<NMRangeScrollView>?
