@@ -14,4 +14,62 @@ It is simple customizable ruler control that support multiple units. The control
 
 <br>
 
+## Example
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
+## Installation
+
+NMMultiUnitRuler is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```
+pod "NMMultiUnitRuler"
+```
+and run pod install in terminal.
+Usage
+
+## RKMultiUnitRuler
+
+### Compatibility
+
+iOS 10+
+
+xCode 9.0+
+
+Swift 4.0
+
+####You can use storyboard to create a control element.
+
+
+## How to use
+
+
+```swift
+class ViewController: UIViewController, NMMultiUnitRulerDataSource, NMMultiUnitRulerDelegate {
+
+}
+```
+
+ Set the ruler direction to horizontal
+
+```swift
+ruler.direction = .horizontal
+```
+
+```swift
+ruler.direction = .vertical
+```
+![Vertical Ruler](https://s3.amazonaws.com/farshid.ghods.github/ruler-vertical-1.jpg)
+
+Specify how many units the ruler will display
+
+```swift
+    var numberOfSegments: Int {
+        get {
+            return 2.0
+        }
+    }
+```
+
 Originally inspired by [RKMultiUnitRuler](https://github.com/farshidce/RKMultiUnitRuler) 
