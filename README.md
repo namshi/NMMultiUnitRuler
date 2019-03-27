@@ -29,8 +29,6 @@ pod "NMMultiUnitRuler"
 and run pod install in terminal.
 Usage
 
-## RKMultiUnitRuler
-
 ### Compatibility
 
 iOS 10+
