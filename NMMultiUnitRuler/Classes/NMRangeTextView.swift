@@ -83,13 +83,13 @@ class NMRangeTextView: UIControl, UITextFieldDelegate {
         self.addSubview(textField)
         let views = ["textField": textField]
         var constraints = NSLayoutConstraint.constraints(withVisualFormat: "H:|-5-[textField]-5-|",
-                options: NSLayoutFormatOptions.directionLeadingToTrailing,
-                metrics: nil,
-                views: views)
+                                                         options: NSLayoutConstraint.FormatOptions.directionLeadingToTrailing,
+                                                         metrics: nil,
+                                                         views: views)
         constraints += NSLayoutConstraint.constraints(withVisualFormat: "V:|-5-[textField]-5-|",
-                options: NSLayoutFormatOptions.directionLeadingToTrailing,
-                metrics: nil,
-                views: views)
+                                                      options: NSLayoutConstraint.FormatOptions.directionLeadingToTrailing,
+                                                      metrics: nil,
+                                                      views: views)
         self.addConstraints(constraints)
         self.textField = textField
     }
@@ -112,7 +112,7 @@ class NMRangeTextView: UIControl, UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
     }
 
-    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextFieldDidEndEditingReason) {
+    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
     }
 
     /*
@@ -132,14 +132,14 @@ class NMRangeTextView: UIControl, UITextFieldDelegate {
                     of: unit.symbol, with: "").floatValue {
                 currentValue = updatedStringAsFloat
                 self.updateTextFieldText(value: currentValue)
-                self.sendActions(for: UIControlEvents.valueChanged)
+                self.sendActions(for: UIControl.Event.valueChanged)
                 return false
             }
             return true
         } else {
             if let updatedStringAsFloat = updatedString?.floatValue {
                 currentValue = updatedStringAsFloat
-                self.sendActions(for: UIControlEvents.valueChanged)
+                self.sendActions(for: UIControl.Event.valueChanged)
             }
             return true
         }

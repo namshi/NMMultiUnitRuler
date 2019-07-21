@@ -33,9 +33,9 @@ Usage
 
 iOS 10+
 
-xCode 9.0+
+xCode 10.2+
 
-Swift 4.0
+Swift 4.2
 
 ####You can use storyboard to create a control element.
 

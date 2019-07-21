@@ -6,13 +6,12 @@ import UIKit
 
 
 /*
-
-public class NMSegmentUnitFormatter {
+ 
+ public class NMSegmentUnitFormatter {
     open var unit : Dimension?
     open var markerTypes: Array<NMRangeMarkerType> = Array()
-    open func string(from measurement: Measurement<Unit>) -> String {
-    }
-}
+    open func string(from measurement: Measurement<Unit>) -> String { }
+ }
 */
 
 
@@ -26,8 +25,7 @@ public class NMSegmentUnit: NSObject, NSCopying {
     public var name: String = String()
     public var image: UIImage?
     public var markerTypes: Array<NMRangeMarkerType> = Array()
-
-
+    
     public var formatter: MeasurementFormatter? {
         didSet {
             if let formatter = self.formatter {
@@ -132,58 +130,55 @@ public class NMMultiUnitRuler: UIView {
             switch (self.direction) {
             case .horizontal:
                 constraints += NSLayoutConstraint.constraints(
-                        withVisualFormat: "H:|-5-[segmentControl]-5-|",
-                        options: NSLayoutFormatOptions.directionLeadingToTrailing,
-                        metrics: nil,
-                        views: ["segmentControl": self.segmentControl])
+                    withVisualFormat: "H:|-5-[segmentControl]-5-|",
+                    options: NSLayoutConstraint.FormatOptions.directionLeadingToTrailing,
+                    metrics: nil,
+                    views: ["segmentControl": self.segmentControl])
                 for segmentView in segmentedViews {
                     constraints += NSLayoutConstraint.constraints(
-                            withVisualFormat: "H:|-5-[segmentView]-5-|",
-                            options: NSLayoutFormatOptions.directionLeadingToTrailing,
-                            metrics: nil,
-                            views: ["segmentView": segmentView])
+                        withVisualFormat: "H:|-5-[segmentView]-5-|",
+                        options: NSLayoutConstraint.FormatOptions.directionLeadingToTrailing,
+                        metrics: nil,
+                        views: ["segmentView": segmentView])
                     constraints += NSLayoutConstraint.constraints(
-                            withVisualFormat: "V:|-5-[segmentControl]-5-[segmentView]-5-|",
-                            options: NSLayoutFormatOptions.directionLeadingToTrailing,
-                            metrics: nil,
-                            views: ["segmentView": segmentView, "segmentControl": segmentControl])
+                        withVisualFormat: "V:|-5-[segmentControl]-5-[segmentView]-5-|",
+                        options: NSLayoutConstraint.FormatOptions.directionLeadingToTrailing,
+                        metrics: nil,
+                        views: ["segmentView": segmentView, "segmentControl": segmentControl])
                 }
             case .vertical:
                 constraints += NSLayoutConstraint.constraints(
-                        withVisualFormat: "H:|-5-[segmentControl]-5-|",
-                        options: NSLayoutFormatOptions.directionLeadingToTrailing,
-                        metrics: nil,
-                        views: ["segmentControl": self.segmentControl])
+                    withVisualFormat: "H:|-5-[segmentControl]-5-|",
+                    options: NSLayoutConstraint.FormatOptions.directionLeadingToTrailing,
+                    metrics: nil,
+                    views: ["segmentControl": self.segmentControl])
                 for segmentView in segmentedViews {
                     constraints += NSLayoutConstraint.constraints(
-                            withVisualFormat: "H:|-5-[segmentView]-5-|",
-                            options: NSLayoutFormatOptions.directionLeadingToTrailing,
-                            metrics: nil,
-                            views: ["segmentView": segmentView])
+                        withVisualFormat: "H:|-5-[segmentView]-5-|",
+                        options: NSLayoutConstraint.FormatOptions.directionLeadingToTrailing,
+                        metrics: nil,
+                        views: ["segmentView": segmentView])
                     constraints += NSLayoutConstraint.constraints(
-                            withVisualFormat: "V:|-5-[segmentControl]-5-[segmentView]-5-|",
-                            options: NSLayoutFormatOptions.directionLeadingToTrailing,
-                            metrics: nil,
-                            views: ["segmentView": segmentView, "segmentControl": segmentControl])
+                        withVisualFormat: "V:|-5-[segmentControl]-5-[segmentView]-5-|",
+                        options: NSLayoutConstraint.FormatOptions.directionLeadingToTrailing,
+                        metrics: nil,
+                        views: ["segmentView": segmentView, "segmentControl": segmentControl])
                 }
 
             }
-            segmentControl.addTarget(self,
-                    action: #selector(NMMultiUnitRuler.segmentSelectionChanged(_:)),
-                    for: UIControlEvents.valueChanged)
+            segmentControl.addTarget(self,action: #selector(NMMultiUnitRuler.segmentSelectionChanged(_:)),for: UIControl.Event.valueChanged)
             self.addConstraints(constraints)
             self.segmentSelectionChanged(self.segmentControl)
         }
     }
-
+    
     private func setupSegmentControl() -> UISegmentedControl {
         if let dataSource = self.dataSource {
             self.segmentControl = UISegmentedControl()
             self.segmentControl.translatesAutoresizingMaskIntoConstraints = false
             for index in 0 ... dataSource.numberOfSegments - 1 {
                 self.segmentControl.insertSegment(withTitle: dataSource.unitForSegmentAtIndex(
-                        index: index).name,
-                        at: index, animated: true)
+                    index: index).name,at: index, animated: true)
             }
 
             if (dataSource.numberOfSegments > 0) {
@@ -235,11 +230,10 @@ public class NMMultiUnitRuler: UIView {
     @objc func scrollViewCurrentValueChanged(_ sender: NMRangeScrollView) {
         if let dataSource = self.dataSource {
             let activeSegmentUnit = dataSource.unitForSegmentAtIndex(
-                    index: segmentControl.selectedSegmentIndex)
+                index: segmentControl.selectedSegmentIndex)
             if let unit = activeSegmentUnit.unit,
-               let scrollViewOfSelectedSegment = self.scrollViews?[segmentControl.selectedSegmentIndex] {
-                self.measurement = NSMeasurement(doubleValue: Double(scrollViewOfSelectedSegment.currentValue),
-                        unit: unit)
+                let scrollViewOfSelectedSegment = self.scrollViews?[segmentControl.selectedSegmentIndex] {
+                self.measurement = NSMeasurement(doubleValue: Double(scrollViewOfSelectedSegment.currentValue),unit: unit)
                 self.delegate?.valueChanged(measurement: self.measurement!)
                 updateTextFields()
             }
@@ -248,11 +242,9 @@ public class NMMultiUnitRuler: UIView {
 
     @objc func textViewValueChanged(_ sender: NMRangeTextView) {
         if let dataSource = self.dataSource {
-            let activeSegmentUnit = dataSource.unitForSegmentAtIndex(
-                    index: segmentControl.selectedSegmentIndex)
+            let activeSegmentUnit = dataSource.unitForSegmentAtIndex(index: segmentControl.selectedSegmentIndex)
             if let textViews = self.textViews, let unit = activeSegmentUnit.unit {
-                self.measurement = NSMeasurement(doubleValue: Double(textViews[segmentControl.selectedSegmentIndex].currentValue),
-                        unit: unit)
+                self.measurement = NSMeasurement(doubleValue: Double(textViews[segmentControl.selectedSegmentIndex].currentValue),unit: unit)
                 self.delegate?.valueChanged(measurement: self.measurement!)
             }
             self.updateScrollViews()
@@ -315,14 +307,9 @@ public class NMMultiUnitRuler: UIView {
                     let style = dataSource.styleForUnit(unit)
                     let range = dataSource.rangeForUnit(unit)
                     names.append(segmentUnit.name)
-                    let pointerView = self.setupPointerView(inSegmentView: segmentView,
-                            unit: segmentUnit,
-                            segmentStyle: style)
-                    let scrollView = self.setupSegmentScrollView(inSegmentView: segmentView,
-                            unit: segmentUnit, segmentStyle: style,
-                            range: range)
-                    let textView = self.setupSegmentBottomView(inSegmentView: segmentView,
-                            unit: segmentUnit, style: style)
+                    let pointerView = self.setupPointerView(inSegmentView: segmentView,unit: segmentUnit,segmentStyle: style)
+                    let scrollView = self.setupSegmentScrollView(inSegmentView: segmentView, unit: segmentUnit, segmentStyle: style, range: range)
+                    let textView = self.setupSegmentBottomView(inSegmentView: segmentView, unit: segmentUnit, style: style)
                     let underlineView = self.setupSegmentLineUnderBottomView(inSegmentView: segmentView)
                     let segmentSubViews = ["scrollView": scrollView,
                                            "textView": textView,
@@ -332,48 +319,48 @@ public class NMMultiUnitRuler: UIView {
                     switch (self.direction) {
                     case .vertical:
                         constraints += NSLayoutConstraint.constraints(withVisualFormat: "V:|-5-[scrollView]-5-|",
-                                options: NSLayoutFormatOptions.directionLeadingToTrailing,
-                                metrics: nil,
-                                views: segmentSubViews)
+                                                                      options: NSLayoutConstraint.FormatOptions.directionLeadingToTrailing,
+                                                                      metrics: nil,
+                                                                      views: segmentSubViews)
                         constraints += NSLayoutConstraint.constraints(withVisualFormat: "H:|-5-[pointerView(10)]-0-[scrollView]-5-[textView]-5-|",
-                                options: NSLayoutFormatOptions.directionLeadingToTrailing,
-                                metrics: nil,
-                                views: segmentSubViews)
+                                                                      options: NSLayoutConstraint.FormatOptions.directionLeadingToTrailing,
+                                                                      metrics: nil,
+                                                                      views: segmentSubViews)
                         constraints += NSLayoutConstraint.constraints(withVisualFormat: "V:|-5-[pointerView]-5-|",
-                                options: NSLayoutFormatOptions.directionLeadingToTrailing,
-                                metrics: nil,
-                                views: segmentSubViews)
+                                                                      options: NSLayoutConstraint.FormatOptions.directionLeadingToTrailing,
+                                                                      metrics: nil,
+                                                                      views: segmentSubViews)
                         constraints += NSLayoutConstraint.constraints(withVisualFormat: "H:|-5-[pointerView(10)]-0-[scrollView]-5-[underlineView]-5-|",
-                                options: NSLayoutFormatOptions.directionLeadingToTrailing,
-                                metrics: nil,
-                                views: segmentSubViews)
+                                                                      options: NSLayoutConstraint.FormatOptions.directionLeadingToTrailing,
+                                                                      metrics: nil,
+                                                                      views: segmentSubViews)
                         constraints += NSLayoutConstraint.constraints(
-                                withVisualFormat: "V:|-10-[textView(25)]-1-[underlineView(2)]",
-                                options: NSLayoutFormatOptions.alignAllCenterX,
-                                metrics: nil,
-                                views: segmentSubViews)
+                            withVisualFormat: "V:|-10-[textView(25)]-1-[underlineView(2)]",
+                            options: NSLayoutConstraint.FormatOptions.alignAllCenterX,
+                            metrics: nil,
+                            views: segmentSubViews)
                     case .horizontal:
                         constraints += NSLayoutConstraint.constraints(withVisualFormat: "H:|-5-[scrollView]-5-|",
-                                options: NSLayoutFormatOptions.directionLeadingToTrailing,
-                                metrics: nil,
-                                views: segmentSubViews)
+                                                                      options: NSLayoutConstraint.FormatOptions.directionLeadingToTrailing,
+                                                                      metrics: nil,
+                                                                      views: segmentSubViews)
                         constraints += NSLayoutConstraint.constraints(withVisualFormat: "H:|-5-[textView]-5-|",
-                                options: NSLayoutFormatOptions.directionLeadingToTrailing,
-                                metrics: nil,
-                                views: segmentSubViews)
+                                                                      options: NSLayoutConstraint.FormatOptions.directionLeadingToTrailing,
+                                                                      metrics: nil,
+                                                                      views: segmentSubViews)
                         constraints += NSLayoutConstraint.constraints(withVisualFormat: "H:|-5-[pointerView]-5-|",
-                                options: NSLayoutFormatOptions.directionLeadingToTrailing,
-                                metrics: nil,
-                                views: segmentSubViews)
+                                                                      options: NSLayoutConstraint.FormatOptions.directionLeadingToTrailing,
+                                                                      metrics: nil,
+                                                                      views: segmentSubViews)
                         constraints += NSLayoutConstraint.constraints(withVisualFormat: "H:|-5-[underlineView]-5-|",
-                                options: NSLayoutFormatOptions.directionLeadingToTrailing,
-                                metrics: nil,
-                                views: segmentSubViews)
+                                                                      options: NSLayoutConstraint.FormatOptions.directionLeadingToTrailing,
+                                                                      metrics: nil,
+                                                                      views: segmentSubViews)
                         constraints += NSLayoutConstraint.constraints(
-                                withVisualFormat: "V:|-5-[pointerView(10)]-0-[scrollView]-5-[textView(25)]-1-[underlineView(2)]-5-|",
-                                options: NSLayoutFormatOptions.directionLeadingToTrailing,
-                                metrics: nil,
-                                views: segmentSubViews)
+                            withVisualFormat: "V:|-5-[pointerView(10)]-0-[scrollView]-5-[textView(25)]-1-[underlineView(2)]-5-|",
+                            options: NSLayoutConstraint.FormatOptions.directionLeadingToTrailing,
+                            metrics: nil,
+                            views: segmentSubViews)
                     }
                     self.backgroundColor = style.scrollViewBackgroundColor
                     segmentView.addConstraints(constraints)
@@ -411,13 +398,11 @@ public class NMMultiUnitRuler: UIView {
         scrollView.colorOverrides = style.colorOverrides
         scrollView.direction = self.direction
         scrollView.translatesAutoresizingMaskIntoConstraints = false
-        scrollView.addTarget(self,
-                action: #selector(NMMultiUnitRuler.scrollViewCurrentValueChanged(_:)),
-                for: .valueChanged)
+        scrollView.addTarget(self,action: #selector(NMMultiUnitRuler.scrollViewCurrentValueChanged(_:)),for: .valueChanged)
         parent.addSubview(scrollView)
         return scrollView
     }
-
+    
     private func setupSegmentBottomView(inSegmentView parent: UIView,
                                         unit segmentUnit: NMSegmentUnit,
                                         style: NMSegmentUnitControlStyle) -> NMRangeTextView {
@@ -428,9 +413,7 @@ public class NMMultiUnitRuler: UIView {
         textView.unit = segmentUnit.unit
         textView.formatter = segmentUnit.formatter
         textView.translatesAutoresizingMaskIntoConstraints = false
-        textView.addTarget(self,
-                action: #selector(NMMultiUnitRuler.textViewValueChanged(_:)),
-                for: .valueChanged)
+        textView.addTarget(self,action: #selector(NMMultiUnitRuler.textViewValueChanged(_:)),for: .valueChanged)
         parent.addSubview(textView)
         return textView
     }
