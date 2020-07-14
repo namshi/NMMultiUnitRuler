@@ -11,6 +11,7 @@ It is simple customizable ruler control that support multiple units. The control
 - Customize the unit formatter
 
 <img src="https://raw.githubusercontent.com/namshi/NMMultiUnitRuler/master/Screenshots/NMMultiUnitRuler.png" width="300"> 
+<img src="https://raw.githubusercontent.com/namshi/NMMultiUnitRuler/master/Screenshots/NMMultiUnitRuleriPhoneX.png" width="300"> 
 
 <br>
 
