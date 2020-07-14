@@ -35,8 +35,7 @@ A simple customizable ruler control that support multiple units. The control sup
   s.source           = { :git => 'https://github.com/namshi/NMMultiUnitRuler.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '11.0'
-
+  s.swift_version = '5.0'
   s.source_files = 'NMMultiUnitRuler/Classes/**/*'
-  
   s.frameworks = 'UIKit'
 end
