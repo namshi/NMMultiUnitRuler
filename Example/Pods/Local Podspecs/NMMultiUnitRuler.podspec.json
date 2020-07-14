@@ -1,8 +1,8 @@
 {
   "name": "NMMultiUnitRuler",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "summary": "Simple customizable ruler control that supports multiple units",
-  "description": "A simple customizable ruler control that support multiple units. The control supports these features:\n\n- Customizable interface\n- Compatible with iOS 10.0 NSUnit Framework\n- Supports multiple units\n- Customize marker colors based on type or their value\n- Customize the width, length and number of markers of the ruler\n- Customize the unit formatter",
+  "description": "A simple customizable ruler control that support multiple units. The control supports these features:\n\n- Customizable interface\n- Compatible with iOS 11.0 NSUnit Framework\n- Supports multiple units\n- Customize marker colors based on type or their value\n- Customize the width, length and number of markers of the ruler\n- Customize the unit formatter",
   "homepage": "https://github.com/namshi/NMMultiUnitRuler",
   "screenshots": "https://raw.githubusercontent.com/namshi/NMMultiUnitRuler/master/Screenshots/NMMultiUnitRuler.png",
   "license": {
@@ -14,10 +14,10 @@
   },
   "source": {
     "git": "https://github.com/namshi/NMMultiUnitRuler.git",
-    "tag": "0.0.1"
+    "tag": "0.1.1"
   },
   "platforms": {
-    "ios": "10.0"
+    "ios": "11.0"
   },
   "source_files": "NMMultiUnitRuler/Classes/**/*",
   "frameworks": "UIKit"

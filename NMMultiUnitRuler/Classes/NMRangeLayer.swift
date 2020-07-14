@@ -212,7 +212,7 @@ class NMRangeLayer: CALayer {
             }
             if let imageToDraw = UIGraphicsGetImageFromCurrentImageContext() {
                 UIGraphicsEndImageContext();
-                imageToDraw.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+                imageToDraw.withRenderingMode(UIImage.RenderingMode.alwaysTemplate)
                 contents = imageToDraw.cgImage
             }
         }

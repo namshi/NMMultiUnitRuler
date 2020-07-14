@@ -4,7 +4,7 @@ iOS library to select different size units using a Scrollable Ruler
 It is simple customizable ruler control that support multiple units. The control supports these features:
 
 - Customizable interface
-- Compatible with iOS 10.0 NSUnit Framework
+- Compatible with iOS 11.0 NSUnit Framework
 - Supports multiple units
 - Customize marker colors based on type or their value
 - Customize the width, length and number of markers of the ruler
@@ -31,11 +31,11 @@ Usage
 
 ### Compatibility
 
-iOS 10+
+iOS 11+
 
 xCode 9.0+
 
-Swift 4.0
+Swift 5.0
 
 ####You can use storyboard to create a control element.
 

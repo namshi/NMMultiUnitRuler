@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NMMultiUnitRuler'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Simple customizable ruler control that supports multiple units'
 
 # This description is used to generate tags and improve search results.
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 A simple customizable ruler control that support multiple units. The control supports these features:
 
 - Customizable interface
-- Compatible with iOS 10.0 NSUnit Framework
+- Compatible with iOS 11.0 NSUnit Framework
 - Supports multiple units
 - Customize marker colors based on type or their value
 - Customize the width, length and number of markers of the ruler
@@ -34,7 +34,7 @@ A simple customizable ruler control that support multiple units. The control sup
   s.author           = { 'NAMSHI MOBILE TEAM' => 'mobile-dev@namshi.com' }
   s.source           = { :git => 'https://github.com/namshi/NMMultiUnitRuler.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '11.0'
 
   s.source_files = 'NMMultiUnitRuler/Classes/**/*'
   
