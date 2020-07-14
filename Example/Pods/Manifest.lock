@@ -1,5 +1,5 @@
 PODS:
-  - NMMultiUnitRuler (0.0.1)
+  - NMMultiUnitRuler (0.1.1)
 
 DEPENDENCIES:
   - NMMultiUnitRuler (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  NMMultiUnitRuler: 320e93aebabee6a602acbf86249e07cf1755f558
+  NMMultiUnitRuler: e63ba6ff4e12426bc4bf091c18a7b4b1ba0743cf
 
 PODFILE CHECKSUM: ec8b2d5d306125f0bd5cddadd2929b53a6c6294d
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.8.4
